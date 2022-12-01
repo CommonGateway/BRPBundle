@@ -1,0 +1,314 @@
+
+// Hier alle shema info. Moet nog in de schema bestanden gezet worden
+
+
+
+
+
+// adres
+{
+  "$id": "https://vng.opencatalogi.nl/schemas/brp_adres.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1.0"
+  }
+  
+  // waardetabel
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_waardetabel.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // href
+  
+  // datumonvolledig
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_datumonvolledig.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // invalifparams
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_invalidparams.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // foutbericht
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_foutbericht.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // badrequestfoutbericht
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_badrequestfoutbericht.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // geboortedatun
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_geboortedatum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // soortverbintenis_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_soortverbintenis_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // soortadres_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_soortadres_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // redenopschortingbijhouding_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_redenopschortingbijhouding_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // ouderaanduiding_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_ouderaanduiding_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // naamgebruik_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_naamgebruik_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // indicatiegezagminderjarige_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_indicatiegezagminderjarige_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // geslacht_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_geslacht_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // aanduidingbijhuisnummer_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_aanduidingbijhuisnummer_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // aanduidingbijzondernederlanderschap_enum
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_aanduidingbijzondernederlanderschap_enum.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // ingeschrevenpersoonembedded
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_ingeschrevenpersoonembedded.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // partnerlinks
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_partnerlinks.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // kindlinks
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_kindlinks.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // ouderlinks
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_ouderlinks.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // ingeschrevenpersoonlinks
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_ingeschrevenpersoonlinks.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // verblijfstitelinonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_verblijfstitelinonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // verblijstitel
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_verblijfstitel.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // gezagsverhoudinginonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_gezagsverhoudinginonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // gezagsverhouding
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_gezagsverhouding.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // verblijfplaatsinonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_verblijfplaatsinonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // verblijfplaats
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_verblijfplaats.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // aangaanhuwelijkpartnerschapinonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_aangaanhuwelijkpartnerschapinonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // aangaanhuwelijkpartnerschap
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_aangaanhuwelijkpartnerschap.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // partnerinonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_partnerinonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // kindinonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_kindinonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // overlijdeninonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_overlijdeninonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // overlijden
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_overlijden.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // opschortingbijhouding
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_opschortingbijhouding.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // nationaliteitinonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_nationaliteitinonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // nationaliteit
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_nationaliteit.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // persooninonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_persooninonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // naampersoon
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_naampersoon.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // kiesrecht
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_kiesrecht.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // geboorteinonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_geboorteinonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // geboorte
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_geboorte.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // ouderinonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_ouderinonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // naampersooninonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_naampersooninonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // naaminonderzoek
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_naaminonderzoek.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // naambasis
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_naambasis.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // naam
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_naam.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // partner
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_partner.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // kind
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_kind.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // ingeschrevenpersoon
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_ingeschrevenpersoon.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  // reisdocumentnummer
+  {
+      "$id": "https://vng.opencatalogi.nl/schemas/brp_reisdocumentnummer.schema.json",
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "version": "0.1.0"
+      }
+  
+  
+  
+  
