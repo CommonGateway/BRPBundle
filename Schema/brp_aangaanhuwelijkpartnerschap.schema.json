@@ -1,0 +1,23 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_aangaanhuwelijkpartnerschap.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "AangaanHuwelijkPartnerschap": {
+        "type": "object",
+        "properties": {
+            "datum": {
+                "$ref": "#/components/schemas/DatumOnvolledig"
+            },
+            "land": {
+                "$ref": "#/components/schemas/Waardetabel"
+            },
+            "plaats": {
+                "$ref": "#/components/schemas/Waardetabel"
+            },
+            "inOnderzoek": {
+                "$ref": "#/components/schemas/AangaanHuwelijkPartnerschapInOnderzoek"
+            }
+        },
+        "description": "Gegevens over de voltrekking van het huwelijk of het aangaan van het geregistreerd partnerschap.\n* **datum** : De datum waarop het huwelijk is voltrokken of het partnerschap is aangegaan.\n* **land** : Het land waar het huwelijk is voltrokken of het partnerschap is aangegaan.\n* **plaats** : De gemeente waar het huwelijk is voltrokken of het partnerschap is aangegaan. Voor een plaats buiten Nederland bevat het antwoord een buitenlandse plaatsnaam of aanduiding.\n"
+    }
+}

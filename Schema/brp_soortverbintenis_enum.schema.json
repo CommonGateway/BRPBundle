@@ -1,0 +1,13 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_soortverbintenis_enum.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "SoortVerbintenis_enum": {
+        "type": "string",
+        "description": "Soort verbintenis die bij de burgerlijke stand is ingeschreven\n* `huwelijk` - H\n* `geregistreerd_partnerschap` - P\n",
+        "enum": [
+            "huwelijk",
+            "geregistreerd_partnerschap"
+        ]
+    }
+}

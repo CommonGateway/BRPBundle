@@ -1,0 +1,10 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_reisdocumentnummer.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "Reisdocumentnummer": {
+        "type": "string",
+        "description": "Het nummer van het verstrekte Nederlandse reisdocument.\n",
+        "example": "546376728"
+    }
+}

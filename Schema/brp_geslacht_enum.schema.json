@@ -1,0 +1,14 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_geslacht_enum.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "Geslacht_enum": {
+        "type": "string",
+        "description": "Geeft aan dat de persoon een man of vrouw is, of dat het geslacht (nog) onbekend is\n* `man` - M\n* `vrouw` - V\n* `onbekend` - O\n",
+        "enum": [
+            "man",
+            "vrouw",
+            "onbekend"
+        ]
+    }
+}

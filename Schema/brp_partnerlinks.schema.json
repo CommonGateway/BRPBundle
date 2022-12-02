@@ -1,0 +1,17 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_partnerlinks.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "PartnerLinks": {
+        "type": "object",
+        "properties": {
+            "self": {
+                "$ref": "#/components/schemas/HalLink"
+            },
+            "ingeschrevenPersoon": {
+                "$ref": "#/components/schemas/HalLink"
+            }
+        },
+        "deprecated": true
+    }
+}
