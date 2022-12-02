@@ -1,0 +1,16 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_redenopschortingbijhouding_enum.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "RedenOpschortingBijhouding_enum": {
+        "type": "string",
+        "description": "Redenen voor opschorting van de bijhouding\n* `overlijden` - O\n* `emigratie` - E\n* `ministerieel_besluit` - M\n* `pl_aangelegd_in_de_rni` - R - opgeschort omdat persoon is ingeschreven in het Register Niet Ingezeten (RNI).\n* `fout` - F\n",
+        "enum": [
+            "overlijden",
+            "emigratie",
+            "ministerieel_besluit",
+            "pl_aangelegd_in_de_rni",
+            "fout"
+        ]
+    }
+}

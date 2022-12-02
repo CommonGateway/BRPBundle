@@ -1,0 +1,94 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_verblijfplaats.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "Verblijfplaats": {
+        "allOf": [
+            {
+                "$ref": "#/components/schemas/Adres"
+            },
+            {
+                "properties": {
+                    "adresseerbaarObjectIdentificatie": {
+                        "type": "string",
+                        "description": "De verblijfplaats van de persoon kan een ligplaats, een standplaats of een verblijfsobject zijn.\n",
+                        "example": "0226010000038820"
+                    },
+                    "aanduidingBijHuisnummer": {
+                        "$ref": "#/components/schemas/AanduidingBijHuisnummer_enum"
+                    },
+                    "nummeraanduidingIdentificatie": {
+                        "type": "string",
+                        "description": "Unieke identificatie van een nummeraanduiding (en het bijbehorende adres) in de BAG.\n",
+                        "example": "0518200000366054"
+                    },
+                    "functieAdres": {
+                        "$ref": "#/components/schemas/SoortAdres_enum"
+                    },
+                    "indicatieVestigingVanuitBuitenland": {
+                        "type": "boolean",
+                        "description": "Geeft aan dat de ingeschreven persoon zich vanuit het buitenland heeft ingeschreven.\n"
+                    },
+                    "locatiebeschrijving": {
+                        "type": "string",
+                        "description": "Omschrijving van de ligging van een verblijfsobject, standplaats of ligplaats.\n",
+                        "example": "Naast de derde brug"
+                    },
+                    "korteNaam": {
+                        "type": "string",
+                        "description": "De officiële openbareruimtenaam uit de Basisregistratie Gebouwen en Adressen (BAG) of een verkorte versie.\n"
+                    },
+                    "vanuitVertrokkenOnbekendWaarheen": {
+                        "type": "boolean",
+                        "description": "Geeft aan dat de persoon is teruggekeerd uit een situatie van 'vertrokken onbekend waarheen.'\n",
+                        "example": true
+                    },
+                    "datumAanvangAdreshouding": {
+                        "$ref": "#/components/schemas/DatumOnvolledig"
+                    },
+                    "datumIngangGeldigheid": {
+                        "$ref": "#/components/schemas/DatumOnvolledig"
+                    },
+                    "datumInschrijvingInGemeente": {
+                        "$ref": "#/components/schemas/DatumOnvolledig"
+                    },
+                    "datumVestigingInNederland": {
+                        "$ref": "#/components/schemas/DatumOnvolledig"
+                    },
+                    "gemeenteVanInschrijving": {
+                        "$ref": "#/components/schemas/Waardetabel"
+                    },
+                    "landVanwaarIngeschreven": {
+                        "$ref": "#/components/schemas/Waardetabel"
+                    },
+                    "adresregel1": {
+                        "type": "string",
+                        "description": "Het eerste deel van een adres is een combinatie van de straat en huisnummer.\n",
+                        "example": "Laan van de landinrichtingscommissie Duiven-Westervoort 26A-3"
+                    },
+                    "adresregel2": {
+                        "type": "string",
+                        "description": "Het tweede deel van een adres is een combinatie van woonplaats eventueel in combinatie met de postcode.\n",
+                        "example": "1234AA Nootdorp"
+                    },
+                    "adresregel3": {
+                        "type": "string",
+                        "description": "Het derde deel van een adres is optioneel. Het gaat om een of meer geografische gebieden van het adres in het buitenland.\n",
+                        "example": "Selangor"
+                    },
+                    "vertrokkenOnbekendWaarheen": {
+                        "type": "boolean",
+                        "description": "Indicatie dat de ingeschreven persoon is vertrokken naar het buitenland, maar dat niet bekend is waar naar toe.\n"
+                    },
+                    "land": {
+                        "$ref": "#/components/schemas/Waardetabel"
+                    },
+                    "inOnderzoek": {
+                        "$ref": "#/components/schemas/VerblijfplaatsInOnderzoek"
+                    }
+                },
+                "description": "Gegevens over het verblijf of de woonlocatie van een persoon.\n* **datumAanvangAdreshuishouding** : de datum van aangifte of ambtshalve melding van verblijf en adres.\n* **datumIngangGeldigheid** : datum waarop de gegevens over de verblijfplaats geldig zijn geworden.\n* **datumInschrijvingInGemeente**: bij inschrijving op grond van een verhuisaangifte door de burger is dit de aangiftedatum. Bij inschrijving op grond van een geboorteakte is dit de geboortedatum. Bij ambtshalve inschrijving is dit de datum waarop het voornemen van ambtshalve opneming schriftelijk aan de persoon is medegedeeld.\n* **datumVestigingInNederland** : datum van inschrijving in Nederland.\n* **landVanWaarIngeschreven** : het land waar de persoon woonde voor (her)vestiging in Nederland.\n* **gemeenteVanInschrijving** : de gemeente waar de persoon verblijft en is ingeschreven. De code kan voorloopnullen bevatten.\"\n"
+            }
+        ]
+    }
+}

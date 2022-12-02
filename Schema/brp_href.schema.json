@@ -1,0 +1,9 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_href.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "Href": {
+        "type": "string",
+        "example": "https://datapunt.voorbeeldgemeente.nl/api/v{major-versie}/resourcename/{resource-identificatie}"
+    }
+}

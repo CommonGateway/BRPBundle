@@ -1,0 +1,91 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_ingeschrevenpersoon.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "IngeschrevenPersoon": {
+        "type": "object",
+        "properties": {
+            "burgerservicenummer": {
+                "type": "string",
+                "example": "555555021"
+            },
+            "aNummer": {
+                "type": "string",
+                "description": "Het A-nummer van de persoon\n"
+            },
+            "geheimhoudingPersoonsgegevens": {
+                "title": "Indicatie geheim",
+                "type": "boolean",
+                "description": "Gegevens mogen niet worden verstrekt aan derden / maatschappelijke instellingen.\n"
+            },
+            "geslachtsaanduiding": {
+                "$ref": "#/components/schemas/Geslacht_enum"
+            },
+            "leeftijd": {
+                "type": "integer",
+                "description": "Leeftijd in jaren op het moment van bevragen.\n",
+                "example": 34
+            },
+            "datumEersteInschrijvingGBA": {
+                "$ref": "#/components/schemas/DatumOnvolledig"
+            },
+            "kiesrecht": {
+                "$ref": "#/components/schemas/Kiesrecht"
+            },
+            "naam": {
+                "$ref": "#/components/schemas/NaamPersoon"
+            },
+            "inOnderzoek": {
+                "$ref": "#/components/schemas/PersoonInOnderzoek"
+            },
+            "nationaliteiten": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/components/schemas/Nationaliteit"
+                }
+            },
+            "geboorte": {
+                "$ref": "#/components/schemas/Geboorte"
+            },
+            "opschortingBijhouding": {
+                "$ref": "#/components/schemas/OpschortingBijhouding"
+            },
+            "overlijden": {
+                "$ref": "#/components/schemas/Overlijden"
+            },
+            "verblijfplaats": {
+                "$ref": "#/components/schemas/Verblijfplaats"
+            },
+            "gezagsverhouding": {
+                "$ref": "#/components/schemas/Gezagsverhouding"
+            },
+            "verblijfstitel": {
+                "$ref": "#/components/schemas/Verblijfstitel"
+            },
+            "reisdocumentnummers": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/components/schemas/Reisdocumentnummer"
+                }
+            },
+            "kinderen": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/components/schemas/Kind"
+                }
+            },
+            "ouders": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/components/schemas/Ouder"
+                }
+            },
+            "partners": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/components/schemas/Partner"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_opschortingbijhouding.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "OpschortingBijhouding": {
+        "type": "object",
+        "properties": {
+            "reden": {
+                "$ref": "#/components/schemas/RedenOpschortingBijhouding_enum"
+            },
+            "datum": {
+                "$ref": "#/components/schemas/DatumOnvolledig"
+            }
+        },
+        "description": "* **datum**: de datum waarop de bijhouding van de persoonsgegevens is gestaakt.\n"
+    }
+}
