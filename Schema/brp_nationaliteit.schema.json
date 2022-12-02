@@ -1,0 +1,26 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_nationaliteit.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "Nationaliteit": {
+        "type": "object",
+        "properties": {
+            "aanduidingBijzonderNederlanderschap": {
+                "$ref": "#/components/schemas/AanduidingBijzonderNederlanderschap_enum"
+            },
+            "datumIngangGeldigheid": {
+                "$ref": "#/components/schemas/DatumOnvolledig"
+            },
+            "nationaliteit": {
+                "$ref": "#/components/schemas/Waardetabel"
+            },
+            "redenOpname": {
+                "$ref": "#/components/schemas/Waardetabel"
+            },
+            "inOnderzoek": {
+                "$ref": "#/components/schemas/NationaliteitInOnderzoek"
+            }
+        },
+        "description": "* **redenOpname** : De reden op grond waarvan de persoon de nationaliteit gekregen heeft.\n"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/brp_naampersooninonderzoek.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "NaamPersoonInOnderzoek": {
+        "allOf": [
+            {
+                "$ref": "#/components/schemas/NaamInOnderzoek"
+            },
+            {
+                "properties": {
+                    "aanduidingNaamgebruik": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        ]
+    }
+}
