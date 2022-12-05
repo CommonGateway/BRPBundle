@@ -2,12 +2,11 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_ouderaanduiding_enum.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "OuderAanduiding_enum": {
-        "type": "string",
-        "description": "Geeft aan om welke ouder het gaat volgens de BRP\n* `ouder1` - 1\n* `ouder2` - 2\n",
-        "enum": [
-            "ouder1",
-            "ouder2"
-        ]
-    }
+    "title": "OuderAanduiding_enum",
+    "type": "string",
+    "description": "Geeft aan om welke ouder het gaat volgens de BRP\n* `ouder1` - 1\n* `ouder2` - 2\n",
+    "enum": [
+        "ouder1",
+        "ouder2"
+    ]
 }

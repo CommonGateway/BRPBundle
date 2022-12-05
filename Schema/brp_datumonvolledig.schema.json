@@ -2,36 +2,35 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_datumonvolledig.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "DatumOnvolledig": {
-        "type": "object",
-        "properties": {
-            "dag": {
-                "maximum": 31,
-                "minimum": 1,
-                "type": "integer",
-                "description": "Als de dag van de datum bekend is wordt dit element gevuld,\nook als de volledige datum bekend is.",
-                "example": 3
-            },
-            "datum": {
-                "type": "string",
-                "description": "Als de volledige datum bekend is wordt de datum gevuld die\nin de date definitie past.",
-                "format": "date",
-                "example": "1989-05-03T00:00:00.000Z"
-            },
-            "jaar": {
-                "maximum": 9999,
-                "type": "integer",
-                "description": "Als het jaar van de datum bekend is wordt dit element gevuld,\nook als de volledige datum bekend is.",
-                "example": 1989
-            },
-            "maand": {
-                "maximum": 12,
-                "minimum": 1,
-                "type": "integer",
-                "description": "Als de maand van een datum bekend is wordt dit element gevuld, ook als de volledige datum bekend is.",
-                "example": 5
-            }
+    "title": "DatumOnvolledig",
+    "type": "object",
+    "properties": {
+        "dag": {
+            "maximum": 31,
+            "minimum": 1,
+            "type": "integer",
+            "description": "Als de dag van de datum bekend is wordt dit element gevuld,\nook als de volledige datum bekend is.",
+            "example": 3
         },
-        "description": "Gegevens over de datums die mogelijk niet volledig zijn."
-    }
+        "datum": {
+            "type": "string",
+            "description": "Als de volledige datum bekend is wordt de datum gevuld die\nin de date definitie past.",
+            "format": "date",
+            "example": "1989-05-03T00:00:00.000Z"
+        },
+        "jaar": {
+            "maximum": 9999,
+            "type": "integer",
+            "description": "Als het jaar van de datum bekend is wordt dit element gevuld,\nook als de volledige datum bekend is.",
+            "example": 1989
+        },
+        "maand": {
+            "maximum": 12,
+            "minimum": 1,
+            "type": "integer",
+            "description": "Als de maand van een datum bekend is wordt dit element gevuld, ook als de volledige datum bekend is.",
+            "example": 5
+        }
+    },
+    "description": "Gegevens over de datums die mogelijk niet volledig zijn."
 }

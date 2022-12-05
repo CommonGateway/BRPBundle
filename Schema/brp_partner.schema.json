@@ -2,32 +2,31 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_partner.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "Partner": {
-        "type": "object",
-        "properties": {
-            "burgerservicenummer": {
-                "type": "string",
-                "example": "555555021"
-            },
-            "geslachtsaanduiding": {
-                "$ref": "#/components/schemas/Geslacht_enum"
-            },
-            "soortVerbintenis": {
-                "$ref": "#/components/schemas/SoortVerbintenis_enum"
-            },
-            "naam": {
-                "$ref": "#/components/schemas/Naam"
-            },
-            "geboorte": {
-                "$ref": "#/components/schemas/Geboorte"
-            },
-            "inOnderzoek": {
-                "$ref": "#/components/schemas/PartnerInOnderzoek"
-            },
-            "aangaanHuwelijkPartnerschap": {
-                "$ref": "#/components/schemas/AangaanHuwelijkPartnerschap"
-            }
+    "title": "Partner",
+    "type": "object",
+    "properties": {
+        "burgerservicenummer": {
+            "type": "string",
+            "example": "555555021"
         },
-        "description": "Gegevens over een gesloten huwelijk/geregistreerd partnerschap van de persoon.\n"
-    }
+        "geslachtsaanduiding": {
+            "$ref": "#/components/schemas/Geslacht_enum"
+        },
+        "soortVerbintenis": {
+            "$ref": "#/components/schemas/SoortVerbintenis_enum"
+        },
+        "naam": {
+            "$ref": "#/components/schemas/Naam"
+        },
+        "geboorte": {
+            "$ref": "#/components/schemas/Geboorte"
+        },
+        "inOnderzoek": {
+            "$ref": "#/components/schemas/PartnerInOnderzoek"
+        },
+        "aangaanHuwelijkPartnerschap": {
+            "$ref": "#/components/schemas/AangaanHuwelijkPartnerschap"
+        }
+    },
+    "description": "Gegevens over een gesloten huwelijk/geregistreerd partnerschap van de persoon.\n"
 }

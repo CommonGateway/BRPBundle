@@ -2,55 +2,54 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_ingeschrevenpersoonlinks.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "IngeschrevenPersoonLinks": {
-        "type": "object",
-        "properties": {
-            "self": {
-                "$ref": "#/components/schemas/HalLink"
-            },
-            "ouders": {
-                "type": "array",
-                "description": "De ouders van de persoon.\n",
-                "items": {
-                    "$ref": "#/components/schemas/HalLink"
-                }
-            },
-            "reisdocumenten": {
-                "type": "array",
-                "description": "De reisdocumenten die aan de persoon zijn verstrekt.\n",
-                "items": {
-                    "$ref": "#/components/schemas/HalLink"
-                }
-            },
-            "kinderen": {
-                "type": "array",
-                "description": "De kinderen van de persoon.\n",
-                "items": {
-                    "$ref": "#/components/schemas/HalLink"
-                }
-            },
-            "partners": {
-                "type": "array",
-                "description": "De actuele bij de ingeschreven persoon geregistreerde huwelijken en geregistreerd partnerschappen. Een beëindigd huwelijk of geregistreerd partnerschap wordt niet teruggegeven.\n",
-                "items": {
-                    "$ref": "#/components/schemas/HalLink"
-                }
-            },
-            "partnerhistorie": {
-                "$ref": "#/components/schemas/HalLink"
-            },
-            "verblijfplaatshistorie": {
-                "$ref": "#/components/schemas/HalLink"
-            },
-            "verblijfstitelhistorie": {
-                "$ref": "#/components/schemas/HalLink"
-            },
-            "nationaliteitHistorie": {
-                "$ref": "#/components/schemas/HalLink"
-            },
-            "adres": {
+    "title": "IngeschrevenPersoonLinks",
+    "type": "object",
+    "properties": {
+        "self": {
+            "$ref": "#/components/schemas/HalLink"
+        },
+        "ouders": {
+            "type": "array",
+            "description": "De ouders van de persoon.\n",
+            "items": {
                 "$ref": "#/components/schemas/HalLink"
             }
+        },
+        "reisdocumenten": {
+            "type": "array",
+            "description": "De reisdocumenten die aan de persoon zijn verstrekt.\n",
+            "items": {
+                "$ref": "#/components/schemas/HalLink"
+            }
+        },
+        "kinderen": {
+            "type": "array",
+            "description": "De kinderen van de persoon.\n",
+            "items": {
+                "$ref": "#/components/schemas/HalLink"
+            }
+        },
+        "partners": {
+            "type": "array",
+            "description": "De actuele bij de ingeschreven persoon geregistreerde huwelijken en geregistreerd partnerschappen. Een beëindigd huwelijk of geregistreerd partnerschap wordt niet teruggegeven.\n",
+            "items": {
+                "$ref": "#/components/schemas/HalLink"
+            }
+        },
+        "partnerhistorie": {
+            "$ref": "#/components/schemas/HalLink"
+        },
+        "verblijfplaatshistorie": {
+            "$ref": "#/components/schemas/HalLink"
+        },
+        "verblijfstitelhistorie": {
+            "$ref": "#/components/schemas/HalLink"
+        },
+        "nationaliteitHistorie": {
+            "$ref": "#/components/schemas/HalLink"
+        },
+        "adres": {
+            "$ref": "#/components/schemas/HalLink"
         }
     }
 }

@@ -2,13 +2,12 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_geboortedatum.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "Geboortedatum": {
-        "type": "object",
-        "properties": {
-            "datum": {
-                "$ref": "#/components/schemas/DatumOnvolledig"
-            }
-        },
-        "description": "Gegevens over de geboorte van respectievelijk de persoon, de ouder, de echtgenoot/geregistreerd partner, de eerdere echtgenoot/geregistreerd partner of het kind.\n* **datum** : Datum waarop de persoon is geboren\n* **land** : Land waar de persoon is geboren\n* **plaats** : De plaats waar de persoon is geboren. Voor een plaats buiten Nederland is gemeentecode=1999 (RNI) en gemeentenaam de buitenlandse plaatsnaam of aanduiding.\n"
-    }
+    "title": "Geboortedatum",
+    "type": "object",
+    "properties": {
+        "datum": {
+            "$ref": "#/components/schemas/DatumOnvolledig"
+        }
+    },
+    "description": "Gegevens over de geboorte van respectievelijk de persoon, de ouder, de echtgenoot/geregistreerd partner, de eerdere echtgenoot/geregistreerd partner of het kind.\n* **datum** : Datum waarop de persoon is geboren\n* **land** : Land waar de persoon is geboren\n* **plaats** : De plaats waar de persoon is geboren. Voor een plaats buiten Nederland is gemeentecode=1999 (RNI) en gemeentenaam de buitenlandse plaatsnaam of aanduiding.\n"
 }

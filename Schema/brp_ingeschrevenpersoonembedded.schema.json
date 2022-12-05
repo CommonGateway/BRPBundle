@@ -2,31 +2,30 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_ingeschrevenpersoonembedded.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "IngeschrevenPersoonEmbedded": {
-        "type": "object",
-        "properties": {
-            "ouders": {
-                "type": "array",
-                "description": "De ouders van de persoon.\n",
-                "items": {
-                    "$ref": "#/components/schemas/OuderHalBasis"
-                }
-            },
-            "kinderen": {
-                "type": "array",
-                "description": "De kinderen van de persoon.\n",
-                "items": {
-                    "$ref": "#/components/schemas/KindHalBasis"
-                }
-            },
-            "partners": {
-                "type": "array",
-                "description": "De partners van de persoon. Een beëindigd huwelijk of geregistreerd partnerschap wordt niet teruggegeven.\n",
-                "items": {
-                    "$ref": "#/components/schemas/PartnerHalBasis"
-                }
+    "title": "IngeschrevenPersoonEmbedded",
+    "type": "object",
+    "properties": {
+        "ouders": {
+            "type": "array",
+            "description": "De ouders van de persoon.\n",
+            "items": {
+                "$ref": "#/components/schemas/OuderHalBasis"
             }
         },
-        "deprecated": true
-    }
+        "kinderen": {
+            "type": "array",
+            "description": "De kinderen van de persoon.\n",
+            "items": {
+                "$ref": "#/components/schemas/KindHalBasis"
+            }
+        },
+        "partners": {
+            "type": "array",
+            "description": "De partners van de persoon. Een beëindigd huwelijk of geregistreerd partnerschap wordt niet teruggegeven.\n",
+            "items": {
+                "$ref": "#/components/schemas/PartnerHalBasis"
+            }
+        }
+    },
+    "deprecated": true
 }

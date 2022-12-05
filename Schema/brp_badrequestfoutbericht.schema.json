@@ -2,23 +2,22 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_badrequestfoutbericht.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "BadRequestFoutbericht": {
-        "allOf": [
-            {
-                "$ref": "#/components/schemas/Foutbericht"
-            },
-            {
-                "type": "object",
-                "properties": {
-                    "invalidParams": {
-                        "type": "array",
-                        "description": "Foutmelding per fout in een parameter. Alle gevonden fouten worden één keer teruggemeld.",
-                        "items": {
-                            "$ref": "#/components/schemas/InvalidParams"
-                        }
+    "title": "BadRequestFoutbericht",
+    "allOf": [
+        {
+            "$ref": "#/components/schemas/Foutbericht"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "invalidParams": {
+                    "type": "array",
+                    "description": "Foutmelding per fout in een parameter. Alle gevonden fouten worden één keer teruggemeld.",
+                    "items": {
+                        "$ref": "#/components/schemas/InvalidParams"
                     }
                 }
             }
-        ]
-    }
+        }
+    ]
 }

@@ -2,12 +2,11 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_aanduidingbijhuisnummer_enum.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "AanduidingBijHuisnummer_enum": {
-        "type": "string",
-        "description": "De aanduiding die wordt gebruikt voor adressen die geen straatnaam en huisnummeraanduidingen hebben\n* `tegenover` - to\n* `bij` - by\n",
-        "enum": [
-            "tegenover",
-            "bij"
-        ]
-    }
+    "title": "AanduidingBijHuisnummer_enum",
+    "type": "string",
+    "description": "De aanduiding die wordt gebruikt voor adressen die geen straatnaam en huisnummeraanduidingen hebben\n* `tegenover` - to\n* `bij` - by\n",
+    "enum": [
+        "tegenover",
+        "bij"
+    ]
 }

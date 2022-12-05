@@ -2,28 +2,27 @@
     "$id": "https://vng.opencatalogi.nl/schemas/brp_kind.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "Kind": {
-        "type": "object",
-        "properties": {
-            "burgerservicenummer": {
-                "type": "string",
-                "example": "555555021"
-            },
-            "leeftijd": {
-                "type": "integer",
-                "description": "Leeftijd op het moment van bevragen\n",
-                "example": 12
-            },
-            "inOnderzoek": {
-                "$ref": "#/components/schemas/KindInOnderzoek"
-            },
-            "naam": {
-                "$ref": "#/components/schemas/Naam"
-            },
-            "geboorte": {
-                "$ref": "#/components/schemas/Geboorte"
-            }
+    "title": "Kind",
+    "type": "object",
+    "properties": {
+        "burgerservicenummer": {
+            "type": "string",
+            "example": "555555021"
         },
-        "description": "Gegevens over een kind van de persoon.\n"
-    }
+        "leeftijd": {
+            "type": "integer",
+            "description": "Leeftijd op het moment van bevragen\n",
+            "example": 12
+        },
+        "inOnderzoek": {
+            "$ref": "#/components/schemas/KindInOnderzoek"
+        },
+        "naam": {
+            "$ref": "#/components/schemas/Naam"
+        },
+        "geboorte": {
+            "$ref": "#/components/schemas/Geboorte"
+        }
+    },
+    "description": "Gegevens over een kind van de persoon.\n"
 }
