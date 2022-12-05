@@ -5,7 +5,7 @@ An example repository for creating php symfony flex bundles
 ### Using this bundle
 
 #### Installing with common-gateway admin user-interface
-@todo!
+@todo!!
 
 #### Installing with php commands
 
