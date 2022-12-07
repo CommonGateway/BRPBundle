@@ -1,0 +1,35 @@
+{
+    "$id": "https://vng.brp.nl/schemas/naam.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "Naam",
+    "type": "object",
+    "properties": {
+        "geslachtsnaam": {
+            "type": "string",
+            "example": "Vries",
+            "description": "De achternaam van een persoon."
+        },
+        "voorletters": {
+            "type": "string",
+            "example": "P.J.",
+            "description": "De voorletters van de persoon, afgeleid van de voornamen."
+        },
+        "voornamen": {
+            "type": "string",
+            "example": "Pieter Jan",
+            "description": "De verzameling namen voor de geslachtsnaam, gescheiden door spaties."
+        },
+        "voorvoegsel": {
+            "type": "string",
+            "example": "de",
+            "description": "De achternaam van een persoon."
+        },
+        "adellijkeTitelPredikaat": {
+            "$ref": "#/definitions/Waardetabel"
+        },
+        "inOnderzoek": {
+            "$ref": "#/definitions/NaamInOnderzoek"
+        }
+    }
+}

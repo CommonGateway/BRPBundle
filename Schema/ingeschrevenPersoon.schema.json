@@ -1,0 +1,98 @@
+{
+    "$id": "https://vng.brp.nl/schemas/ingeschrevenPersoon.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "IngeschrevenPersoon",
+    "type": "object",
+    "properties": {
+        "burgerservicenummer": {
+            "type": "string",
+            "example": "555555021"
+        },
+        "aNummer": {
+            "type": "string",
+            "description": "Het A-nummer van de persoon."
+        },
+        "geheimhoudingPersoonsgegevens": {
+            "title": "Indicatie geheim",
+            "type": "boolean",
+            "description": "Gegevens mogen niet worden verstrekt aan derden / maatschappelijke instellingen."
+        },
+        "geslachtsaanduiding": {
+            "type": "string",
+            "description": "Geeft aan dat de persoon een man of vrouw is, of dat het geslacht (nog) onbekend is\n* `man` - M\n* `vrouw` - V\n* `onbekend` - O",
+            "enum": [
+                "man",
+                "vrouw",
+                "onbekend"
+            ]
+        },
+        "leeftijd": {
+            "type": "integer",
+            "description": "Leeftijd in jaren op het moment van bevragen.",
+            "example": 34
+        },
+        "datumEersteInschrijvingGBA": {
+            "$ref": "#/definitions/DatumOnvolledig"
+        },
+        "kiesrecht": {
+            "$ref": "#/definitions/Kiesrecht"
+        },
+        "naam": {
+            "$ref": "#/definitions/NaamPersoon"
+        },
+        "inOnderzoek": {
+            "$ref": "#/definitions/PersoonInOnderzoek"
+        },
+        "nationaliteiten": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Nationaliteit"
+            }
+        },
+        "geboorte": {
+            "$ref": "#/definitions/Geboorte"
+        },
+        "opschortingBijhouding": {
+            "$ref": "#/definitions/OpschortingBijhouding"
+        },
+        "overlijden": {
+            "$ref": "#/definitions/Overlijden"
+        },
+        "verblijfplaats": {
+            "$ref": "#/definitions/Verblijfplaats"
+        },
+        "gezagsverhouding": {
+            "$ref": "#/definitions/Gezagsverhouding"
+        },
+        "verblijfstitel": {
+            "$ref": "#/definitions/Verblijfstitel"
+        },
+        "reisdocumentnummers": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "Het nummer van het verstrekte Nederlandse reisdocument.\n",
+                "example": "546376728"
+            }
+        },
+        "kinderen": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Kind"
+            }
+        },
+        "ouders": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Ouder"
+            }
+        },
+        "partners": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Partner"
+            }
+        }
+    }
+}

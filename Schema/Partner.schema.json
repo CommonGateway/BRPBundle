@@ -1,0 +1,43 @@
+{
+    "$id": "https://vng.brp.nl/schemas/partner.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "Partner",
+    "description": "Gegevens over een gesloten huwelijk/geregistreerd partnerschap van de persoon.",
+    "type": "object",
+    "properties": {
+        "burgerservicenummer": {
+            "type": "string",
+            "example": "555555021"
+        },
+        "geslachtsaanduiding": {
+            "type": "string",
+            "description": "Geeft aan dat de persoon een man of vrouw is, of dat het geslacht (nog) onbekend is\n* `man` - M\n* `vrouw` - V\n* `onbekend` - O",
+            "enum": [
+                "man",
+                "vrouw",
+                "onbekend"
+            ]
+        },
+        "soortVerbintenis": {
+            "type": "string",
+            "description": "Soort verbintenis die bij de burgerlijke stand is ingeschreven\n* `huwelijk` - H\n* `geregistreerd_partnerschap` - P",
+            "enum": [
+                "huwelijk",
+                "geregistreerd_partnerschap"
+            ]
+        },
+        "naam": {
+            "$ref": "#/definitions/Naam"
+        },
+        "geboorte": {
+            "$ref": "#/definitions/Geboorte"
+        },
+        "inOnderzoek": {
+            "$ref": "#/definitions/PartnerInOnderzoek"
+        },
+        "aangaanHuwelijkPartnerschap": {
+            "$ref": "#/definitions/AangaanHuwelijkPartnerschap"
+        }
+    }
+}

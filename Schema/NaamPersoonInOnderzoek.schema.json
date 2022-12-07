@@ -1,0 +1,27 @@
+{
+    "$id": "https://vng.brp.nl/schemas/naamPersoonInOnderzoek.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "NaamPersoonInOnderzoek",
+    "description": "Geeft aan welke gegevens over de naam in onderzoek zijn. Zie de functionele specificaties",
+    "properties": {
+        "geslachtsnaam": {
+            "type": "boolean"
+        },
+        "voornamen": {
+            "type": "boolean"
+        },
+        "voorvoegsel": {
+            "type": "boolean"
+        },
+        "adellijkeTitelPredikaat": {
+            "type": "boolean"
+        },
+        "datumIngangOnderzoek": {
+            "type": "boolean"
+        },
+        "aanduidingNaamgebruik": {
+            "$ref": "#/definitions/DatumOnvolledig"
+        }
+    }
+}
