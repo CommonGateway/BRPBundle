@@ -1,0 +1,19 @@
+{
+    "$id": "https://vng.brp.nl/schemas/gezagsverhoudingInOnderzoek.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "GezagsverhoudingInOnderzoek",
+    "description": "Geeft aan welke gegevens van de gezagsverhouding in onderzoek zijn. Zie de [functionele specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/v1.1.0/features/in_onderzoek.feature)",
+    "type": "object",
+    "properties": {
+        "indicatieCurateleRegister": {
+            "type": "boolean"
+        },
+        "indicatieGezagMinderjarige": {
+            "type": "boolean"
+        },
+        "datumIngangOnderzoek": {
+            "$ref": "#/definitions/DatumOnvolledig"
+        }
+    }
+}

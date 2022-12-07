@@ -1,0 +1,22 @@
+{
+    "$id": "https://vng.brp.nl/schemas/verblijfstitelInOnderzoek.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1.0",
+    "title": "VerblijfstitelInOnderzoek",
+    "description": "Geeft aan welke gegevens over de verblijfstitel in onderzoek zijn. Zie de [functionele specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/v1.1.0/features/in_onderzoek.feature)",
+    "type": "object",
+    "properties": {
+        "aanduiding": {
+            "type": "boolean"
+        },
+        "datumEinde": {
+            "type": "boolean"
+        },
+        "datumIngang": {
+            "type": "boolean"
+        },
+        "datumIngangOnderzoek": {
+            "$ref": "#/definitions/DatumOnvolledig"
+        }
+    }
+}
