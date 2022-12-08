@@ -1,9 +1,9 @@
 {
-    "$id": "https://vng.brp.nl/schemas/ouder.schema.json",
+    "$id": "https://vng.brp.nl/schemas/brp.partner.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "version": "0.1.0",
-    "title": "Ouder",
-    "description": "Gegevens over de ouder van de persoon.\n\ndatumIngangFamilierechtelijkeBetrekking - De datum waarop de familierechtelijke betrekking is ontstaan.",
+    "title": "Partner",
+    "description": "Gegevens over een gesloten huwelijk/geregistreerd partnerschap van de persoon.",
     "type": "object",
     "properties": {
         "burgerservicenummer": {
@@ -19,25 +19,25 @@
                 "onbekend"
             ]
         },
-        "ouderAanduiding": {
+        "soortVerbintenis": {
             "type": "string",
-            "description": "Geeft aan om welke ouder het gaat volgens de BRP\n* `ouder1` - 1\n* `ouder2` - 2",
+            "description": "Soort verbintenis die bij de burgerlijke stand is ingeschreven\n* `huwelijk` - H\n* `geregistreerd_partnerschap` - P",
             "enum": [
-                "ouder1",
-                "ouder2"
+                "huwelijk",
+                "geregistreerd_partnerschap"
             ]
-        },
-        "datumIngangFamilierechtelijkeBetrekking": {
-            "$ref": "#/definitions/DatumOnvolledig"
         },
         "naam": {
             "$ref": "#/definitions/Naam"
         },
-        "inOnderzoek": {
-            "$ref": "#/definitions/OuderInOnderzoek"
-        },
         "geboorte": {
             "$ref": "#/definitions/Geboorte"
+        },
+        "inOnderzoek": {
+            "$ref": "#/definitions/PartnerInOnderzoek"
+        },
+        "aangaanHuwelijkPartnerschap": {
+            "$ref": "#/definitions/AangaanHuwelijkPartnerschap"
         }
     }
 }
