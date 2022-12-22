@@ -24,7 +24,7 @@
             ]
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/GezagsverhoudingInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.gezagsverhoudingInOnderzoek.schema.json"
         }
     }
 }

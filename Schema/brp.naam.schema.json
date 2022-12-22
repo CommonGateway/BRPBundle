@@ -26,10 +26,10 @@
             "description": "De achternaam van een persoon."
         },
         "adellijkeTitelPredikaat": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/NaamInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.naamInOnderzoek.schema.json"
         }
     }
 }

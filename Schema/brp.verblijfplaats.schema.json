@@ -83,22 +83,22 @@
             "example": true
         },
         "datumAanvangAdreshouding": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "datumIngangGeldigheid": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "datumInschrijvingInGemeente": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "datumVestigingInNederland": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "gemeenteVanInschrijving": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "landVanwaarIngeschreven": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "adresregel1": {
             "type": "string",
@@ -119,10 +119,10 @@
             "description": "Indicatie dat de ingeschreven persoon is vertrokken naar het buitenland, maar dat niet bekend is waar naar toe."
         },
         "land": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/VerblijfplaatsInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.verblijfplaatsInOnderzoek.schema.json"
         }
     }
 }

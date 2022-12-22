@@ -25,7 +25,7 @@
             "example": "de"
         },
         "adellijkeTitelPredikaat": {
-           "$ref": "#/definitions/Waardetabel"
+           "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "aanhef": {
             "type": "string",
@@ -58,7 +58,7 @@
             ]
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         }
     }
 }

@@ -15,10 +15,10 @@
             "example": true
         },
         "einddatumUitsluitingEuropeesKiesrecht": {
-            "$ref": "#/components/schemas/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "einddatumUitsluitingKiesrecht": {
-            "$ref": "#/components/schemas/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         }
     }
 
