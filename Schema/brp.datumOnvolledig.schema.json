@@ -14,9 +14,8 @@
             "example": 3
         },
         "datum": {
-            "type": "string",
+            "type": "date",
             "description": "Als de volledige datum bekend is wordt de datum gevuld die in de date definitie past.",
-            "format": "date",
             "example": "1989-05-03"
         },
         "jaar": {

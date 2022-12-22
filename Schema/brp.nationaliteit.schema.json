@@ -15,16 +15,16 @@
             ]
         },
         "datumIngangGeldigheid": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "nationaliteit": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "redenOpname": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/NationaliteitInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.nationaliteitInOnderzoek.schema.json"
         }
     }
 }

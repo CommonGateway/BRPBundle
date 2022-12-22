@@ -16,13 +16,13 @@
             "example": 12
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/KindInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.kindInOnderzoek.schema.json"
         },
         "naam": {
-            "$ref": "#/definitions/Naam"
+            "$ref": "https://vng.brp.nl/schemas/brp.naam.schema.json"
         },
         "geboorte": {
-            "$ref": "#/definitions/Geboorte"
+            "$ref": "https://vng.brp.nl/schemas/brp.geboorte.schema.json"
         }
     }
 }

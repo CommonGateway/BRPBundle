@@ -28,16 +28,16 @@
             ]
         },
         "naam": {
-            "$ref": "#/definitions/Naam"
+            "$ref": "https://vng.brp.nl/schemas/brp.naam.schema.json"
         },
         "geboorte": {
-            "$ref": "#/definitions/Geboorte"
+            "$ref": "https://vng.brp.nl/schemas/brp.geboorte.schema.json"
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/PartnerInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.partnerInOnderzoek.schema.json"
         },
         "aangaanHuwelijkPartnerschap": {
-            "$ref": "#/definitions/AangaanHuwelijkPartnerschap"
+            "$ref": "https://vng.brp.nl/schemas/brp.aangaanhuwelijkPartnerschap.schema.json"
         }
     }
 }

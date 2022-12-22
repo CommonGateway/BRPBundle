@@ -7,16 +7,16 @@
     "type": "object",
     "properties": {
         "datum": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "land": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "plaats": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/GeboorteInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.geboorteInOnderzoek.schema.json"
         }
     }
 }

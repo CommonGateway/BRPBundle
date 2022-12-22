@@ -11,16 +11,16 @@
             "description": "Geeft aan dat iemand is overleden (waarde true), ongeacht of de overlijdensdatum bekend is."
         },
         "datum": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "land": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "plaats": {
-            "$ref": "#/definitions/Waardetabel"
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/OverlijdenInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.overlijdenInOnderzoek.schema.json"
         }
     }
 }

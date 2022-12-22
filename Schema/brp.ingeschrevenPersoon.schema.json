@@ -33,40 +33,40 @@
             "example": 34
         },
         "datumEersteInschrijvingGBA": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "kiesrecht": {
-            "$ref": "#/definitions/Kiesrecht"
+            "$ref": "https://vng.brp.nl/schemas/brp.kiesrecht.schema.json"
         },
         "naam": {
-            "$ref": "#/definitions/NaamPersoon"
+            "$ref": "https://vng.brp.nl/schemas/brp.naamPersoon.schema.json"
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/PersoonInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.persoonInOnderzoek.schema.json"
         },
         "nationaliteiten": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/Nationaliteit"
+                "$ref": "https://vng.brp.nl/schemas/brp.nationaliteit.schema.json"
             }
         },
         "geboorte": {
-            "$ref": "#/definitions/Geboorte"
+            "$ref": "https://vng.brp.nl/schemas/brp.geboorte.schema.json"
         },
         "opschortingBijhouding": {
-            "$ref": "#/definitions/OpschortingBijhouding"
+            "$ref": "https://vng.brp.nl/schemas/brp.opschortingBijhouding.schema.json"
         },
         "overlijden": {
-            "$ref": "#/definitions/Overlijden"
+            "$ref": "https://vng.brp.nl/schemas/brp.overlijden.schema.json"
         },
         "verblijfplaats": {
-            "$ref": "#/definitions/Verblijfplaats"
+            "$ref": "https://vng.brp.nl/schemas/brp.verblijfplaats.schema.json"
         },
         "gezagsverhouding": {
-            "$ref": "#/definitions/Gezagsverhouding"
+            "$ref": "https://vng.brp.nl/schemas/brp.gezagsverhouding.schema.json"
         },
         "verblijfstitel": {
-            "$ref": "#/definitions/Verblijfstitel"
+            "$ref": "https://vng.brp.nl/schemas/brp.verblijfstitel.schema.json"
         },
         "reisdocumentnummers": {
             "type": "array",
@@ -79,19 +79,19 @@
         "kinderen": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/Kind"
+                "$ref": "https://vng.brp.nl/schemas/brp.kind.schema.json"
             }
         },
         "ouders": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/Ouder"
+                "$ref": "https://vng.brp.nl/schemas/brp.ouder.schema.json"
             }
         },
         "partners": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/Partner"
+                "$ref": "https://vng.brp.nl/schemas/brp.partner.schema.json"
             }
         }
     }

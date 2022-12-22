@@ -28,16 +28,16 @@
             ]
         },
         "datumIngangFamilierechtelijkeBetrekking": {
-            "$ref": "#/definitions/DatumOnvolledig"
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "naam": {
-            "$ref": "#/definitions/Naam"
+            "$ref": "https://vng.brp.nl/schemas/brp.naam.schema.json"
         },
         "inOnderzoek": {
-            "$ref": "#/definitions/OuderInOnderzoek"
+            "$ref": "https://vng.brp.nl/schemas/brp.ouderInOnderzoek.schema.json"
         },
         "geboorte": {
-            "$ref": "#/definitions/Geboorte"
+            "$ref": "https://vng.brp.nl/schemas/brp.geboorte.schema.json"
         }
     }
 }
