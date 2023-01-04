@@ -4,6 +4,7 @@
     "version": "0.1.0",
     "title": "NaamPersoonInOnderzoek",
     "description": "Geeft aan welke gegevens over de naam in onderzoek zijn. Zie de functionele specificaties",
+    "type": "object",
     "properties": {
         "geslachtsnaam": {
             "type": "boolean"

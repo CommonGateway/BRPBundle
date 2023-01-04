@@ -3,16 +3,26 @@
 // src/Service/InstallationService.php
 namespace CommonGateway\BRPBundle\Service;
 
+use App\Entity\CollectionEntity;
 use App\Entity\DashboardCard;
 use App\Entity\Endpoint;
 use CommonGateway\CoreBundle\Installer\InstallerInterface;
 use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\ORM\Mapping\Entity;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
 class InstallationService implements InstallerInterface
 {
     private EntityManagerInterface $entityManager;
     private SymfonyStyle $io;
+
+    public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [
+        'https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json',
+    ];
+
+    public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
+        ['reference' => 'https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json',                 'path' => ['/ingeschrevenpersonen'],                    'methods' => []],
+    ];
 
     public function __construct(EntityManagerInterface $entityManager)
     {
@@ -47,12 +57,58 @@ class InstallationService implements InstallerInterface
         // Do some cleanup
     }
 
-    public function checkDataConsistency()
+    private function createEndpoints($objectsThatShouldHaveEndpoints): array
     {
+        $endpointRepository = $this->entityManager->getRepository('App:Endpoint');
+        $endpoints = [];
+        foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
+            $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
+            if (!$endpointRepository->findOneBy(['name' => $entity->getName()])) {
+                $endpoint = new Endpoint($entity, $objectThatShouldHaveEndpoint['path'], $objectThatShouldHaveEndpoint['methods']);
 
-        // Lets create some genneric dashboard cards
-        $objectsThatShouldHaveCards = ['https://opencatalogi.nl/example.schema.json'];
+                $this->entityManager->persist($endpoint);
+                $this->entityManager->flush();
+                $endpoints[] = $endpoint;
+            }
+        }
+        (isset($this->io) ? $this->io->writeln(count($endpoints).' Endpoints Created'): '');
 
+        return $endpoints;
+    }
+
+    private function addSchemasToCollection(CollectionEntity $collection, string $schemaPrefix): CollectionEntity
+    {
+        $entities = $this->entityManager->getRepository('App:Entity')->findByReferencePrefix($schemaPrefix);
+        foreach($entities as $entity) {
+            $entity->addCollection($collection);
+        }
+        return $collection;
+    }
+
+    private function createCollections(): array
+    {
+        $collectionConfigs = [
+            ['name' => 'BRP',  'prefix' => 'brp', 'schemaPrefix' => 'https://vng.brp.nl/schemas/brp'],
+        ];
+        $collections = [];
+        foreach($collectionConfigs as $collectionConfig) {
+            $collectionsFromEntityManager = $this->entityManager->getRepository('App:CollectionEntity')->findBy(['name' => $collectionConfig['name']]);
+            if(count($collectionsFromEntityManager) == 0){
+                $collection = new CollectionEntity($collectionConfig['name'], $collectionConfig['prefix'], 'KissBundle');
+            } else {
+                $collection = $collectionsFromEntityManager[0];
+            }
+            $collection = $this->addSchemasToCollection($collection, $collectionConfig['schemaPrefix']);
+            $this->entityManager->persist($collection);
+            $this->entityManager->flush();
+            $collections[$collectionConfig['name']] = $collection;
+        }
+        (isset($this->io) ? $this->io->writeln(count($collections).' Collections Created'): '');
+        return $collections;
+    }
+
+    public function createDashboardCards($objectsThatShouldHaveCards)
+    {
         foreach ($objectsThatShouldHaveCards as $object) {
             (isset($this->io) ? $this->io->writeln('Looking for a dashboard card for: ' . $object) : '');
             $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $object]);
@@ -73,29 +129,18 @@ class InstallationService implements InstallerInterface
             }
             (isset($this->io) ? $this->io->writeln('Dashboard card found') : '');
         }
+    }
 
-        // Let create some endpoints
-        $objectsThatShouldHaveEndpoints = ['https://opencatalogi.nl/example.schema.json'];
+    public function checkDataConsistency()
+    {
 
-        foreach ($objectsThatShouldHaveEndpoints as $object) {
-            (isset($this->io) ? $this->io->writeln('Looking for a endpoint for: ' . $object) : '');
-            $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $object]);
-
-            if (
-                count($entity->getEndpoints()) == 0
-            ) {
-                $endpoint = new Endpoint($entity);
-                $this->entityManager->persist($endpoint);
-                (isset($this->io) ? $this->io->writeln('Endpoint created') : '');
-                continue;
-            }
-            (isset($this->io) ? $this->io->writeln('Endpoint found') : '');
-        }
+        // Lets create some genneric dashboard cards
+        $this->createDashboardCards($this::OBJECTS_THAT_SHOULD_HAVE_CARDS);
+        $this->createCollections();
+        $this->createEndpoints($this::SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS);
 
         $this->entityManager->flush();
 
         // Lets see if there is a generic search endpoint
-
-
     }
 }

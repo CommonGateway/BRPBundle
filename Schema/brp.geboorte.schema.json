@@ -6,7 +6,7 @@
     "description": "Gegevens over de geboorte.\n* **datum** : datum waarop de persoon is geboren.\n* **land** : land waar de persoon is geboren\n* **plaats** : gemeente waar de persoon is geboren. Is de persoon geboren buiten Nederland, dan bevat het antwoord alleen een buitenlandse plaatsnaam of aanduiding.",
     "type": "object",
     "properties": {
-        "datum": {
+        "datumOnvolledig": {
             "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "land": {
