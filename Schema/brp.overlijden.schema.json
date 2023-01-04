@@ -10,7 +10,7 @@
             "type": "boolean",
             "description": "Geeft aan dat iemand is overleden (waarde true), ongeacht of de overlijdensdatum bekend is."
         },
-        "datum": {
+        "datumOnvolledig": {
             "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         },
         "land": {

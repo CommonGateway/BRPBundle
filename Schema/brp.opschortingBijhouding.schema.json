@@ -17,7 +17,7 @@
                 "fout"
             ]
         },
-        "datum": {
+        "datumOnvolledig": {
             "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
         }
     }
