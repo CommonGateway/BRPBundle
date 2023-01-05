@@ -76,11 +76,23 @@ class InstallationService implements InstallerInterface
         return $endpoints;
     }
 
+    public function setEntityMaxDepth()
+    {
+        $entities = $this->entityManager->getRepository('App:Entity')->findAll();
+        foreach ($entities as $entity) {
+            // set maxDepth for an entity to 5
+            $entity->setMaxDepth(5);
+            $this->entityManager->persist($entity);
+        }
+    }
+
     private function addSchemasToCollection(CollectionEntity $collection, string $schemaPrefix): CollectionEntity
     {
         $entities = $this->entityManager->getRepository('App:Entity')->findByReferencePrefix($schemaPrefix);
         foreach($entities as $entity) {
             $entity->addCollection($collection);
+            // set all entity maxDepth to 5
+            $this->setEntityMaxDepth();
         }
         return $collection;
     }
@@ -133,7 +145,6 @@ class InstallationService implements InstallerInterface
 
     public function checkDataConsistency()
     {
-
         // Lets create some genneric dashboard cards
         $this->createDashboardCards($this::OBJECTS_THAT_SHOULD_HAVE_CARDS);
         $this->createCollections();
