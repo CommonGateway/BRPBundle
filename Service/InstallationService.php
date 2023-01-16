@@ -21,7 +21,7 @@ class InstallationService implements InstallerInterface
     ];
 
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
-        ['reference' => 'https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json',                 'path' => ['/ingeschrevenpersonen'],                    'methods' => []],
+        ['reference' => 'https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json',                 'path' => '/ingeschrevenpersonen',                    'methods' => []],
     ];
 
     public function __construct(EntityManagerInterface $entityManager)
