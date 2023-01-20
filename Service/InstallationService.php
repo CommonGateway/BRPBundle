@@ -21,7 +21,7 @@ class InstallationService implements InstallerInterface
     ];
 
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
-        ['reference' => 'https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json',                 'path' => '/ingeschrevenpersonen',                    'methods' => []],
+        ['reference' => 'https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json',                 'path' => 'ingeschrevenpersonen',                    'methods' => []],
     ];
 
     public function __construct(EntityManagerInterface $entityManager)
@@ -64,7 +64,7 @@ class InstallationService implements InstallerInterface
         foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
             $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
             if (!$endpointRepository->findOneBy(['name' => $entity->getName()])) {
-                $endpoint = new Endpoint($entity, $objectThatShouldHaveEndpoint['path'], $objectThatShouldHaveEndpoint['methods']);
+                $endpoint = new Endpoint($entity, null, $objectThatShouldHaveEndpoint);
 
                 $this->entityManager->persist($endpoint);
                 $this->entityManager->flush();
