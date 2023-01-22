@@ -16,9 +16,7 @@ class InstallationService implements InstallerInterface
     private EntityManagerInterface $entityManager;
     private SymfonyStyle $io;
 
-    public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [
-        'https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json',
-    ];
+    public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [];
 
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
         ['reference' => 'https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json',                 'path' => 'ingeschrevenpersonen',                    'methods' => []],
