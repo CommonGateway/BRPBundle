@@ -1,0 +1,30 @@
+{
+    "$id": "https://vng.brp.nl/schemas/brp.gezagsverhouding.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1.0",
+    "title": "Gezagsverhouding",
+    "description": "Gegevens over het gezag over de persoon.",
+    "type": "object",
+    "properties": {
+        "indicatieCurateleRegister": {
+            "type": "boolean",
+            "description": "Geeft aan dat de persoon onder curatele is gesteld.",
+            "example": true
+        },
+        "indicatieGezagMinderjarige": {
+            "type": "string",
+            "description": "Geeft aan wie het gezag heeft over de minderjarige persoon.\n* `ouder1` - 1\n* `ouder2` - 2\n* `derden` - D\n* `ouder1_en_derde` - 1D\n* `ouder2_en_derde` - 2D\n* `ouder1_en_ouder2` - 12",
+            "enum": [
+                "ouder1",
+                "ouder2",
+                "derden",
+                "ouder1_en_derde",
+                "ouder2_en_derde",
+                "ouder1_en_ouder2"
+            ]
+        },
+        "inOnderzoek": {
+            "$ref": "https://vng.brp.nl/schemas/brp.gezagsverhoudingInOnderzoek.schema.json"
+        }
+    }
+}

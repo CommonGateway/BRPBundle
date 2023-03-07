@@ -1,0 +1,28 @@
+{
+    "$id": "https://vng.brp.nl/schemas/brp.naamPersoonInOnderzoek.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1.0",
+    "title": "NaamPersoonInOnderzoek",
+    "description": "Geeft aan welke gegevens over de naam in onderzoek zijn. Zie de functionele specificaties",
+    "type": "object",
+    "properties": {
+        "geslachtsnaam": {
+            "type": "boolean"
+        },
+        "voornamen": {
+            "type": "boolean"
+        },
+        "voorvoegsel": {
+            "type": "boolean"
+        },
+        "adellijkeTitelPredikaat": {
+            "type": "boolean"
+        },
+        "datumIngangOnderzoek": {
+            "type": "boolean"
+        },
+        "aanduidingNaamgebruik": {
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
+        }
+    }
+}

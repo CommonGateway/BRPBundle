@@ -1,0 +1,35 @@
+{
+    "$id": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1.0",
+    "title": "DatumOnvolledig",
+    "description": "Gegevens over de datums die mogelijk niet volledig zijn.",
+    "type": "object",
+    "properties": {
+        "dag": {
+            "maximum": 31,
+            "minimum": 1,
+            "type": "integer",
+            "description": "Als de dag van de datum bekend is wordt dit element gevuld, ook als de volledige datum bekend is.",
+            "example": 3
+        },
+        "datum": {
+            "type": "date",
+            "description": "Als de volledige datum bekend is wordt de datum gevuld die in de date definitie past.",
+            "example": "1989-05-03"
+        },
+        "jaar": {
+            "maximum": 9999,
+            "type": "integer",
+            "description": "Als het jaar van de datum bekend is wordt dit element gevuld, ook als de volledige datum bekend is.",
+            "example": 1989
+        },
+        "maand": {
+            "maximum": 12,
+            "minimum": 1,
+            "type": "integer",
+            "description": "Als de maand van een datum bekend is wordt dit element gevuld, ook als de volledige datum bekend is.",
+            "example": 5
+        }
+    }
+}

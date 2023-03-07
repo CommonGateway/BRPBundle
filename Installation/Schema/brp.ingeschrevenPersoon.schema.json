@@ -1,0 +1,98 @@
+{
+    "$id": "https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1.0",
+    "title": "IngeschrevenPersoon",
+    "type": "object",
+    "properties": {
+        "burgerservicenummer": {
+            "type": "string",
+            "example": "555555021"
+        },
+        "aNummer": {
+            "type": "string",
+            "description": "Het A-nummer van de persoon."
+        },
+        "geheimhoudingPersoonsgegevens": {
+            "title": "Indicatie geheim",
+            "type": "boolean",
+            "description": "Gegevens mogen niet worden verstrekt aan derden / maatschappelijke instellingen."
+        },
+        "geslachtsaanduiding": {
+            "type": "string",
+            "description": "Geeft aan dat de persoon een man of vrouw is, of dat het geslacht (nog) onbekend is\n* `man` - M\n* `vrouw` - V\n* `onbekend` - O",
+            "enum": [
+                "man",
+                "vrouw",
+                "onbekend"
+            ]
+        },
+        "leeftijd": {
+            "type": "integer",
+            "description": "Leeftijd in jaren op het moment van bevragen.",
+            "example": 34
+        },
+        "datumEersteInschrijvingGBA": {
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
+        },
+        "kiesrecht": {
+            "$ref": "https://vng.brp.nl/schemas/brp.kiesrecht.schema.json"
+        },
+        "naam": {
+            "$ref": "https://vng.brp.nl/schemas/brp.naamPersoon.schema.json"
+        },
+        "inOnderzoek": {
+            "$ref": "https://vng.brp.nl/schemas/brp.persoonInOnderzoek.schema.json"
+        },
+        "nationaliteiten": {
+            "type": "array",
+            "items": {
+                "$ref": "https://vng.brp.nl/schemas/brp.nationaliteit.schema.json"
+            }
+        },
+        "geboorte": {
+            "$ref": "https://vng.brp.nl/schemas/brp.geboorte.schema.json"
+        },
+        "opschortingBijhouding": {
+            "$ref": "https://vng.brp.nl/schemas/brp.opschortingBijhouding.schema.json"
+        },
+        "overlijden": {
+            "$ref": "https://vng.brp.nl/schemas/brp.overlijden.schema.json"
+        },
+        "verblijfplaats": {
+            "$ref": "https://vng.brp.nl/schemas/brp.verblijfplaats.schema.json"
+        },
+        "gezagsverhouding": {
+            "$ref": "https://vng.brp.nl/schemas/brp.gezagsverhouding.schema.json"
+        },
+        "verblijfstitel": {
+            "$ref": "https://vng.brp.nl/schemas/brp.verblijfstitel.schema.json"
+        },
+        "reisdocumentnummers": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "Het nummer van het verstrekte Nederlandse reisdocument.\n",
+                "example": "546376728"
+            }
+        },
+        "kinderen": {
+            "type": "array",
+            "items": {
+                "$ref": "https://vng.brp.nl/schemas/brp.kind.schema.json"
+            }
+        },
+        "ouders": {
+            "type": "array",
+            "items": {
+                "$ref": "https://vng.brp.nl/schemas/brp.ouder.schema.json"
+            }
+        },
+        "partners": {
+            "type": "array",
+            "items": {
+                "$ref": "https://vng.brp.nl/schemas/brp.partner.schema.json"
+            }
+        }
+    }
+}
