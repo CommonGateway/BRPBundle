@@ -1,0 +1,43 @@
+{
+    "$id": "https://vng.brp.nl/schemas/brp.ouder.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1.0",
+    "title": "Ouder",
+    "description": "Gegevens over de ouder van de persoon.\n\ndatumIngangFamilierechtelijkeBetrekking - De datum waarop de familierechtelijke betrekking is ontstaan.",
+    "type": "object",
+    "properties": {
+        "burgerservicenummer": {
+            "type": "string",
+            "example": "555555021"
+        },
+        "geslachtsaanduiding": {
+            "type": "string",
+            "description": "Geeft aan dat de persoon een man of vrouw is, of dat het geslacht (nog) onbekend is\n* `man` - M\n* `vrouw` - V\n* `onbekend` - O",
+            "enum": [
+                "man",
+                "vrouw",
+                "onbekend"
+            ]
+        },
+        "ouderAanduiding": {
+            "type": "string",
+            "description": "Geeft aan om welke ouder het gaat volgens de BRP\n* `ouder1` - 1\n* `ouder2` - 2",
+            "enum": [
+                "ouder1",
+                "ouder2"
+            ]
+        },
+        "datumIngangFamilierechtelijkeBetrekking": {
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
+        },
+        "naam": {
+            "$ref": "https://vng.brp.nl/schemas/brp.naam.schema.json"
+        },
+        "inOnderzoek": {
+            "$ref": "https://vng.brp.nl/schemas/brp.ouderInOnderzoek.schema.json"
+        },
+        "geboorte": {
+            "$ref": "https://vng.brp.nl/schemas/brp.geboorte.schema.json"
+        }
+    }
+}

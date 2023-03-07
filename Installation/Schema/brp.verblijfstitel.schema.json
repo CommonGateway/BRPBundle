@@ -1,0 +1,22 @@
+{
+    "$id": "https://vng.brp.nl/schemas/brp.verblijfstitel.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1.0",
+    "title": "Verblijfstitel",
+    "description": "Gegevens over de verblijfsrechtelijke status van de persoon.\n* **datumEinde**: Datum waarop de geldigheid van de gegevens over de verblijfstitel is beëindigd.\n* **datumIngang**: Datum waarop de gegevens over de verblijfstitel geldig zijn geworden.\n* **aanduiding** : Verblijfstiteltabel die aangeeft over welke verblijfsrechtelijke status de persoon beschikt.",
+    "type": "object",
+    "properties": {
+        "aanduiding": {
+            "$ref": "https://vng.brp.nl/schemas/brp.waardetabel.schema.json"
+        },
+        "datumEinde": {
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
+        },
+        "datumIngang": {
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
+        },
+        "inOnderzoek": {
+            "$ref": "https://vng.brp.nl/schemas/brp.verblijfstitelInOnderzoek.schema.json"
+        }
+    }
+}

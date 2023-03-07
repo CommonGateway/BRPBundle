@@ -1,3 +1,18 @@
 {
-    "installationService": "CommonGateway\\BRPBundle\\Service\\InstallationService"
+    "installationService": "CommonGateway\\BRPBundle\\Service\\InstallationService",
+    "collections": [
+        {
+            "reference": "https://kissdevelopment.commonground.nu/collection/brp.default.collection.json",
+            "schemaPrefix": "https://vng.brp.nl/schemas/brp"
+        }
+    ],
+    "endpoints": {
+        "schemas": [
+            {
+                "reference": "https://vng.brp.nl/schemas/brp.ingeschrevenPersoon.schema.json",
+                "path": "ingeschrevenpersonen",
+                "methods": []
+            }
+        ]
+    }
 }

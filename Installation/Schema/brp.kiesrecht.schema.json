@@ -1,0 +1,25 @@
+{
+    "$id": "https://vng.brp.nl/schemas/brp.kiesrecht.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1.0",
+    "title": "Kiesrecht",
+    "type": "object",
+    "properties": {
+        "europeesKiesrecht": {
+            "type": "boolean",
+            "description": "Geeft aan of persoon een oproep moet ontvangen voor verkiezingen voor het Europees parlement.\n",
+            "example": true
+        },
+        "uitgeslotenVanKiesrecht": {
+            "type": "boolean",
+            "example": true
+        },
+        "einddatumUitsluitingEuropeesKiesrecht": {
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
+        },
+        "einddatumUitsluitingKiesrecht": {
+            "$ref": "https://vng.brp.nl/schemas/brp.datumOnvolledig.schema.json"
+        }
+    }
+
+}
