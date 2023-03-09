@@ -4,5 +4,5 @@
     "$schema": "https://docs.commongateway.nl/schemas/CollectionEntity.schema.json",
     "version": "0.0.1",
     "prefix": "brp",
-    "plugin": "KissBundle"
+    "plugin": "BRPBundle"
 }
