@@ -6,6 +6,11 @@
     "description": "Geeft aan of de gegevens over het kind van de persoon in onderzoek zijn. Zie de [functionele specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/v1.1.0/features/in_onderzoek.feature)",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "burgerservicenummer": {
             "type": "boolean"
         },

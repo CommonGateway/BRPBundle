@@ -6,6 +6,11 @@
     "description": "* **redenOpname** : De reden op grond waarvan de persoon de nationaliteit gekregen heeft.",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "aanduidingBijzonderNederlanderschap": {
             "type": "string",
             "description": "Geeft aan dat de persoon behandeld wordt als Nederlander, of dat door de rechter is vastgesteld dat de persoon niet de Nederlandse nationaliteit bezit\n* `behandeld_als_nederlander` - B\n* `vastgesteld_niet_nederlander` - V\n",

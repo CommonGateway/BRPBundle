@@ -6,6 +6,11 @@
     "description": "* **datum**: de datum waarop de bijhouding van de persoonsgegevens is gestaakt.",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "reden": {
             "type": "string",
             "description": "Redenen voor opschorting van de bijhouding\n* `overlijden` - O\n* `emigratie` - E\n* `ministerieel_besluit` - M\n* `pl_aangelegd_in_de_rni` - R - opgeschort omdat persoon is ingeschreven in het Register Niet Ingezeten (RNI).\n* `fout` - F",

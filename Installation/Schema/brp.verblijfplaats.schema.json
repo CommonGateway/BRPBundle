@@ -6,6 +6,11 @@
     "description": "Gegevens over het verblijf of de woonlocatie van een persoon.\n* **datumAanvangAdreshuishouding** : de datum van aangifte of ambtshalve melding van verblijf en adres.\n* **datumIngangGeldigheid** : datum waarop de gegevens over de verblijfplaats geldig zijn geworden.\n* **datumInschrijvingInGemeente**: bij inschrijving op grond van een verhuisaangifte door de burger is dit de aangiftedatum. Bij inschrijving op grond van een geboorteakte is dit de geboortedatum. Bij ambtshalve inschrijving is dit de datum waarop het voornemen van ambtshalve opneming schriftelijk aan de persoon is medegedeeld.\n* **datumVestigingInNederland** : datum van inschrijving in Nederland.\n* **landVanWaarIngeschreven** : het land waar de persoon woonde voor (her)vestiging in Nederland.\n* **gemeenteVanInschrijving** : de gemeente waar de persoon verblijft en is ingeschreven. De code kan voorloopnullen bevatten.",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "straat": {
             "type": "string",
             "title": "openbareruimte naam",

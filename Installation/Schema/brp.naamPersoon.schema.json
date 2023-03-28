@@ -5,6 +5,11 @@
     "title": "NaamPersoon",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "geslachtsnaam": {
             "type": "string",
             "description": "De achternaam van een persoon.",

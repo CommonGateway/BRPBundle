@@ -6,6 +6,11 @@
     "description": "Gegevens over de datums die mogelijk niet volledig zijn.",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "dag": {
             "maximum": 31,
             "minimum": 1,

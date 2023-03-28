@@ -6,6 +6,11 @@
     "description": "Gegevens over het gezag over de persoon.",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "indicatieCurateleRegister": {
             "type": "boolean",
             "description": "Geeft aan dat de persoon onder curatele is gesteld.",

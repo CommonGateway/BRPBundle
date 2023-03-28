@@ -5,6 +5,11 @@
     "title": "IngeschrevenPersoon",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "burgerservicenummer": {
             "type": "string",
             "example": "555555021"

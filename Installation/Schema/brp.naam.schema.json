@@ -5,6 +5,11 @@
     "title": "Naam",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "geslachtsnaam": {
             "type": "string",
             "example": "Vries",

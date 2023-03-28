@@ -5,6 +5,11 @@
     "title": "Kiesrecht",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "europeesKiesrecht": {
             "type": "boolean",
             "description": "Geeft aan of persoon een oproep moet ontvangen voor verkiezingen voor het Europees parlement.\n",

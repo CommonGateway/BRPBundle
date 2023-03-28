@@ -6,6 +6,11 @@
     "description": "Gegevens over het overlijden van de persoon.\n* **datum** : datum waarop de persoon is overleden.\n* **land** : land waar de persoon is overleden.\n* **plaats** : gemeente waar de persoon is overleden. Is de persoon overleden buiten Nederland, dan bevat het antwoord alleen een buitenlandse plaatsnaam of aanduiding.",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "indicatieOverleden": {
             "type": "boolean",
             "description": "Geeft aan dat iemand is overleden (waarde true), ongeacht of de overlijdensdatum bekend is."
