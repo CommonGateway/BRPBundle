@@ -18,23 +18,25 @@ softwareType: softwareAddon
 description:
   en:
     localisedName: null
-    genericName: Symfony bundle for BRP functionality.
-    shortDescription: BRPBundle
-    longDescription: Symfony bundle for BRP functionality.
+    genericName: null
+    shortDescription: "Symfony bundle for BRP functionality."
+    longDescription: "Symfony bundle for BRP functionality."
     documentation: null
     apiDocumentation: null
-    features: []
+    features:
+      - Common Ground Gateway Plugin
     screenshots: []
     videos: []
     awards: []
   nl:
     localisedName: null
-    genericName: Symfony bundle voor BRP functionaliteit.
-    shortDescription: BRPBundle
-    longDescription: Symfony bundle voor BRP functionaliteit.
+    genericName: null
+    shortDescription: "Symfony bundle voor BRP functionaliteit."
+    longDescription: "Symfony bundle voor BRP functionaliteit."
     documentation: null
     apiDocumentation: null
-    features: []
+    features:
+      - Common Ground Gateway Plugin
     screenshots: []
     videos: []
     awards: []
